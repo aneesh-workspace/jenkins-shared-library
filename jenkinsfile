@@ -11,5 +11,10 @@
                             echo 'logic'
                         }
                     }
-                }
+                    stage('invoke JSL'){
+                       steps {
+                            filterLogs('logic',2)
+                       }
+                      }
+                    }
             }
